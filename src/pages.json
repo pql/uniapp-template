@@ -1,0 +1,616 @@
+{
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/tabbar/index/index",
+      "style": {
+        "navigationBarTitleText": "%index.home%"
+      }
+    },
+    // #ifdef APP-PLUS || H5
+    {
+      "path": "pages/tabbar/settled/index",
+      "style": {
+        "navigationBarTitleText": "%index.settled%"
+      }
+    },
+    // #endif
+    // #ifdef MP-WEIXIN
+    {
+      "path": "pages/tabbar/project/index",
+      "style": {
+        "navigationBarTitleText": "%index.project%"
+      }
+    },
+    // #endif
+    // #ifdef APP-PLUS || H5
+    {
+      "path": "pages/tabbar/order/index",
+      "style": {
+        "navigationBarTitleText": "%index.order%"
+      }
+    },
+    // #endif
+    // #ifdef MP-WEIXIN
+    {
+      "path": "pages/tabbar/news/index",
+      "style": {
+        "navigationBarTitleText": "%index.hot-news%"
+      }
+    },
+    // #endif
+    {
+      "path": "pages/tabbar/personal-info/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "%index.mine%"
+      }
+    }
+  ],
+  "subPackages": [
+    {
+      "root": "pages/index",
+      "pages": [
+        {
+          "path": "index",
+          "style": {
+            "navigationBarTitleText": "%index.home%"
+          }
+        },
+        {
+          "path": "success-case",
+          "style": {
+            "navigationBarTitleText": "%index.success-case%"
+          }
+        }
+      ]
+    },
+    {
+      "root": "pages/settled",
+      "pages": [
+        {
+          "path": "index",
+          "style": {
+            "navigationBarTitleText": "%index.settled%"
+          }
+        }
+      ]
+    },
+    {
+      "root": "pages/order",
+      "pages": [
+        {
+          "path": "index",
+          "style": {
+            "navigationBarTitleText": "%index.order%"
+          }
+        },
+        {
+          "path": "detail",
+          "style": {
+            "navigationBarTitleText": "%index.order.detail%"
+          }
+        },
+        {
+          "path": "complete-userinfo",
+          "style": {
+            "navigationBarTitleText": "%product.files.fullfill%"
+          }
+        },
+        {
+          "path": "file-management",
+          "style": {
+            "navigationBarTitleText": "%product.my.files%"
+          }
+        }
+      ]
+    },
+    {
+      "root": "pages/personal-info",
+      "pages": [
+        {
+          "path": "appointment/index",
+          "style": {
+            "navigationBarTitleText": "%user.mine.appointment%"
+          }
+        },
+        {
+          "path": "evaluate/index",
+          "style": {
+            "navigationBarTitleText": "%user.menu.fast-evaluate%"
+          }
+        },
+        {
+          "path": "evaluate/test",
+          "style": {
+            "navigationBarTitleText": "%user.mine.evaluate.report%"
+          }
+        },
+        {
+          "path": "btm22/index",
+          "style": {
+            "navigationBarTitleText": "%user.menu.btm22%"
+          }
+        },
+        {
+          "path": "collection/collection",
+          "style": {
+            "navigationBarTitleText": "%user.menu.collection%",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "info-update/index",
+          "style": {
+            "navigationBarTitleText": "%product.my.file.update%",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "lawyer/lawyer",
+          "style": {
+            "navigationBarTitleText": "%user.menu.lawyer%",
+            "enablePullDownRefresh": false,
+            "navigationBarBackgroundColor": "#FFFFFF",
+            "app-plus": {
+              "titleNView": {
+                "type": "default",
+                "titleAlign": "left"
+              },
+              "scrollIndicator": "none"
+            }
+          }
+        },
+        {
+          "path": "broker/broker",
+          "style": {
+            "navigationBarTitleText": "%user.menu.agent%",
+            "enablePullDownRefresh": false,
+            "navigationBarBackgroundColor": "#FFFFFF",
+            "app-plus": {
+              "titleNView": {
+                "type": "default",
+                "titleAlign": "left"
+              },
+              "scrollIndicator": "none"
+            }
+          }
+        },
+        {
+          "path": "moneybag/index",
+          "style": {
+            "navigationBarTitleText": "%user.menu.wallet%",
+            "navigationBarBackgroundColor": "#F5F5F5",
+            "navigationBarTextStyle": "black",
+            "app-plus": {
+              "scrollIndicator": "none",
+              "popGesture": "none",
+              "softinputMode": "adjustPan",
+              "titleNView": {
+                "type": "default",
+                "titleAlign": "left"
+              }
+            }
+          }
+        },
+        {
+          "path": "moneybag/withdraw",
+          "style": {
+            "navigationBarTitleText": "%user.menu.wallet%",
+            "enablePullDownRefresh": false,
+            "app-plus": {
+              "titleNView": false
+            }
+          }
+        },
+        {
+          "path": "userinfo/index",
+          "style": {
+            "navigationBarTitleText": "%user.menu.profile%",
+            "enablePullDownRefresh": false,
+            "navigationBarBackgroundColor": "#F5F5F5",
+            "app-plus": {
+              "titleNView": {
+                "type": "default",
+                "titleAlign": "left"
+              },
+              "scrollIndicator": "none"
+            }
+          }
+        },
+        {
+          "path": "userinfo/setPsw",
+          "style": {
+            "navigationBarTitleText": "%user.mine.password%",
+            "navigationBarBackgroundColor": "#F5F5F5",
+            "enablePullDownRefresh": false,
+            "app-plus": {
+              "titleNView": {
+                "type": "default",
+                "titleText": "%user.mine.password%",
+                "titleAlign": "left"
+              },
+              "scrollIndicator": "none"
+            }
+          }
+        },
+        {
+          "path": "userinfo/setInfo",
+          "style": {
+            "navigationBarTitleText": "%user.mine.profile%",
+            "enablePullDownRefresh": false,
+            "navigationBarBackgroundColor": "#F5F5F5",
+            "app-plus": {
+              "titleNView": {
+                "type": "default",
+                "titleText": "%user.mine.profile%",
+                "titleAlign": "left"
+              },
+              "scrollIndicator": "none"
+            }
+          }
+        },
+        {
+          "path": "privacy/index",
+          "style": {
+            "navigationBarTitleText": "%user.menu.privacy%",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "reg/index",
+          "style": {
+            "navigationBarTitleText": "%user.menu.reg-sd%",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "reg/reject",
+          "style": {
+            "navigationBarTitleText": "user.menu.reg-reject",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "reg/verify",
+          "style": {
+            "navigationBarTitleText": "user.menu.reg-verify",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "account-safe/index",
+          "style": {
+            "navigationBarTitleText": "%user.menu.mine%",
+            "enablePullDownRefresh": false,
+            "navigationBarBackgroundColor": "#F5F5F5",
+            "app-plus": {
+              "titleNView": {
+                "type": "default",
+                "titleAlign": "left"
+              },
+              "scrollIndicator": "none"
+            }
+          }
+        },
+        {
+          "path": "account-safe/bind-email",
+          "style": {
+            "navigationBarTitleText": "%user.menu.bind-email%",
+            "enablePullDownRefresh": false,
+            "navigationBarBackgroundColor": "#F5F5F5",
+            "app-plus": {
+              "titleNView": {
+                "type": "default",
+                "titleAlign": "left"
+              },
+              "scrollIndicator": "none"
+            }
+          }
+        },
+        {
+          "path": "account-safe/bind-google",
+          "style": {
+            "navigationBarTitleText": "%user.menu.bind-google%",
+            "enablePullDownRefresh": false,
+            "navigationBarBackgroundColor": "#F5F5F5",
+            "app-plus": {
+              "titleNView": {
+                "type": "default",
+                "titleAlign": "left"
+              },
+              "scrollIndicator": "none"
+            }
+          }
+        },
+        {
+          "path": "account-safe/bind-phone",
+          "style": {
+            "navigationBarTitleText": "%user.menu.bind-phone%",
+            "enablePullDownRefresh": false,
+            "navigationBarBackgroundColor": "#F5F5F5",
+            "app-plus": {
+              "titleNView": {
+                "type": "default",
+                "titleAlign": "left"
+              },
+              "scrollIndicator": "none"
+            }
+          }
+        },
+        {
+          "path": "two-verifications/two-verifications",
+          "style": {
+            "navigationStyle": "custom",
+            "navigationBarTitleText": "%user.menu.two-step%",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "signature/signature",
+          "style": {
+            "navigationBarTitleText": "%user.menu.stamp%",
+            "enablePullDownRefresh": false,
+            "navigationBarBackgroundColor": "#F5F5F5",
+            "app-plus": {
+              "titleNView": {
+                "type": "default",
+                "titleAlign": "left"
+              },
+              "scrollIndicator": "none"
+            }
+          }
+        },
+        {
+          "path": "signature/create-sign",
+          "style": {
+            "navigationBarTitleText": "%user.menu.create-sign%",
+            "enablePullDownRefresh": false,
+            "navigationBarBackgroundColor": "#F5F5F5",
+            "app-plus": {
+              "titleNView": {
+                "type": "default",
+                "titleAlign": "left"
+              },
+              "scrollIndicator": "none"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "root": "pages/todo",
+      "pages": [
+        {
+          "path": "index",
+          "style": {
+            "navigationBarTitleText": "%product.todo.list%"
+          }
+        }
+      ]
+    },
+    {
+      "root": "pages/login",
+      "pages": [
+        {
+          "path": "index",
+          "style": {
+            "navigationBarTitleText": "%login%"
+          }
+        }
+      ]
+    },
+    {
+      "root": "pages/setting",
+      "pages": [
+        {
+          "path": "index",
+          "style": {
+            "navigationBarTitleText": "%setting%",
+            "enablePullDownRefresh": false,
+            "navigationBarBackgroundColor": "#FFFFFF"
+          }
+        },
+        {
+          "path": "locale",
+          "style": {
+            "navigationBarTitleText": "%setting.locale%",
+            "enablePullDownRefresh": false,
+            "navigationBarBackgroundColor": "#FFFFFF"
+          }
+        }
+      ]
+    },
+    {
+      "root": "pages/contact-us",
+      "pages": [
+        {
+          "path": "index",
+          "style": {
+            "navigationBarTitleText": "%footer.contact-us%",
+            "enablePullDownRefresh": false,
+            "navigationBarBackgroundColor": "#FFFFFF"
+          }
+        }
+      ]
+    },
+    {
+      "root": "pages/privacy-policy",
+      "pages": [
+        {
+          "path": "index",
+          "style": {
+            "navigationBarTitleText": "%footer.privacy-policy%",
+            "enablePullDownRefresh": false,
+            "navigationBarBackgroundColor": "#FFFFFF"
+          }
+        }
+      ]
+    },
+    {
+      "root": "pages/terms",
+      "pages": [
+        {
+          "path": "index",
+          "style": {
+            "navigationBarTitleText": "%terms.title-1%",
+            "enablePullDownRefresh": false,
+            "navigationBarBackgroundColor": "#FFFFFF"
+          }
+        }
+      ]
+    },
+    {
+      "root": "pages/password",
+      "pages": [
+        {
+          "path": "forget",
+          "style": {
+            "navigationBarTitleText": "%password.forget%"
+          }
+        },
+        {
+          "path": "reset",
+          "style": {
+            "navigationBarTitleText": "%password.reset%"
+          }
+        }
+      ]
+    },
+    {
+      "root": "pages/subscribe",
+      "pages": [
+        {
+          "path": "index",
+          "style": {
+            "navigationBarTitleText": "%user.menu.sign%",
+            "enablePullDownRefresh": false,
+            "navigationBarBackgroundColor": "#F5F5F5",
+            "app-plus": {
+              "titleNView": {
+                "type": "default",
+                "titleAlign": "left"
+              },
+              "scrollIndicator": "none"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "root": "pages/webview",
+      "pages": [
+        {
+          "path": "webview",
+          "style": {
+            "navigationBarTitleText": "",
+            "navigationBarBackgroundColor": "#F5F5F5",
+            "app-plus": {
+              "titleNView": {
+                "type": "default",
+                "titleAlign": "left"
+              },
+              "scrollIndicator": "none"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "root": "pages/news",
+      "pages": [
+        {
+          "path": "detail/index",
+          "style": {
+            "navigationBarTitleText": "%news.detail.title%"
+          }
+        }
+      ]
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^u-(.*)": "vk-uview-ui/components/u-$1/u-$1.vue",
+      "^(?!z-paging-refresh|z-paging-load-more)z-paging(.*)": "z-paging/components/z-paging$1/z-paging$1.vue"
+    }
+  },
+  "tabBar": {
+    "color": "#7F8389",
+    "selectedColor": "#3055D7",
+    "borderStyle": "black",
+    "backgroundColor": "#FFF",
+    "list": [
+      {
+        "pagePath": "pages/tabbar/index/index",
+        "iconPath": "static/images/tabbar/icon-1.png",
+        "selectedIconPath": "static/images/tabbar/icon-1-active.png",
+        // #ifdef APP-PLUS
+        "text": "%index.home%",
+        // #endif
+        // #ifdef MP-WEIXIN || H5
+        "text": "首页"
+        // #endif
+      },
+      // #ifdef APP-PLUS || H5
+      {
+        "pagePath": "pages/tabbar/settled/index",
+        "iconPath": "static/images/tabbar/icon-2.png",
+        "selectedIconPath": "static/images/tabbar/icon-2-active.png",
+        // #ifdef APP-PLUS
+        "text": "%index.settled%",
+        // #endif
+        // #ifdef H5
+        "text": "入驻项目"
+        // #endif
+      },
+      // #endif
+      // #ifdef MP-WEIXIN
+      {
+        "pagePath": "pages/tabbar/project/index",
+        "iconPath": "static/images/tabbar/icon-2.png",
+        "selectedIconPath": "static/images/tabbar/icon-2-active.png",
+        "text": "移民项目"
+      },
+      // #endif
+      // #ifdef APP-PLUS || H5
+      {
+        "pagePath": "pages/tabbar/order/index",
+        "iconPath": "static/images/tabbar/icon-3.png",
+        "selectedIconPath": "static/images/tabbar/icon-3-active.png",
+        // #ifdef APP-PLUS
+        "text": "%index.order%",
+        // #endif
+        // #ifdef H5
+        "text": "订单"
+        // #endif
+      },
+      // #endif
+      // #ifdef MP-WEIXIN
+      {
+        "pagePath": "pages/tabbar/news/index",
+        "iconPath": "static/images/tabbar/icon-3.png",
+        "selectedIconPath": "static/images/tabbar/icon-3-active.png",
+        "text": "热门资讯"
+      },
+      // #endif
+      {
+        "pagePath": "pages/tabbar/personal-info/index",
+        "iconPath": "static/images/tabbar/icon-4.png",
+        "selectedIconPath": "static/images/tabbar/icon-4-active.png",
+        // #ifdef APP-PLUS
+        "text": "%index.mine%",
+        // #endif
+        // #ifdef MP-WEIXIN || H5
+        "text": "我的"
+        // #endif
+      }
+    ]
+  }
+}
